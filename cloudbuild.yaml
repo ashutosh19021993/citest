@@ -3,9 +3,9 @@ steps:
 - name: 'gcr.io/$PROJECT_ID/git'
   args: ['clone','https://github.com/ashutosh19021993/citest.git']
 
-#Build the image 
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build','-t', '--tag=Dockerfile','.']
+# #Build the image 
+# - name: 'gcr.io/cloud-builders/docker'
+#   args: ['build','-t', '--tag=Dockerfile','.']
 
 # #Push the image  
 # - name: 'gcr.io/cloud-builders/docker'
