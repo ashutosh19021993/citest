@@ -12,7 +12,7 @@ steps:
 
 #Build the image 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build','-t', '--tag=Dockerfile','.']
+  args: ['build','.']
 
 # #Push the image  
 # - name: 'gcr.io/cloud-builders/docker'
