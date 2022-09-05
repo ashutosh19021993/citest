@@ -2,10 +2,13 @@
 # #First Clone from Google Cloud Source Repository  
 # - name: 'gcr.io/$PROJECT_ID/git'
 #   args: ['clone','https://github.com/ashutosh19021993/citest.git']
+# steps:
+# #First Clone from Google Cloud Source Repository  
+# - name: 'gcr.io/ashutosh19021993/citest.git'
+#   args: ['clone']
 steps:
-#First Clone from Google Cloud Source Repository  
-- name: 'gcr.io/ashutosh19021993/citest.git'
-  args: ['clone']
+- name: gcr.io/cloud-builders/git
+  args: ['clone', 'https://github.com/ashutosh19021993/citest.git']
 
 # #Build the image 
 # - name: 'gcr.io/cloud-builders/docker'
