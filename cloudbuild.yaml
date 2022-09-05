@@ -1,6 +1,6 @@
 steps:
 #First Clone from Google Cloud Source Repository  
-- name: 'gcr.io/cloud-builders/git'
+- name: 'gcr.io/$PROJECT_ID/git'
   args: ['clone','https://github.com/ashutosh19021993/citest.git]
 
 # #Build the image 
