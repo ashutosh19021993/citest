@@ -38,4 +38,6 @@ steps:
     
 # options:
 #     substitution_option: 'ALLOW_LOOSE'
+options:
+  logging: CLOUD_LOGGING_ONLY
 
